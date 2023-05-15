@@ -1,0 +1,185 @@
+$Go-Green: #00AB66;
+$Mint: #4FFFB0;
+$color1: rgb(140, 140, 140);
+
+.Hero {
+    // margin-top: 1em;
+    // border: 2px solid purple;
+    height: 80dvh;
+
+    .hero_content {
+        // border: 2px solid blue;
+        display: flex;
+        height: inherit;
+
+        .hero_content_1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // border: 2px solid brown;
+            // align-items: center;
+            margin-left: 1.5em;
+            width: 50vw;
+            height: inherit;
+            padding: 1em;
+
+            >div>h2>span {
+                border: thin solid $Mint;
+                display: inline-block;
+                width: 2.5vw;
+                margin-right: .3em;
+                margin-bottom: .3em;
+                // height: 2vh;
+            }
+
+            >div>h3 {
+                color: $Go-Green;
+                margin-left: .3em;
+                font-size: 1.5em;
+                margin-bottom: 1em;
+
+
+            }
+
+            #Intro {
+                color: $Go-Green;
+                font-size: 1.3em;
+                padding: .4em;
+
+                margin-bottom: .3em;
+            }
+
+            >div>h1 {
+                // border: 2px solid black;
+                margin-left: .1em;
+                font-size: 3em;
+                margin-bottom: .3em;
+
+                .wave {
+
+                    animation-duration: 2s;
+
+                    animation-iteration-count: infinite;
+
+                    animation-name: wave-animation;
+                    display: inline-block;
+
+                    transform-origin: 70% 70%
+                }
+
+                @keyframes wave-animation {
+                    0% {
+                        -webkit-transform: rotate(0);
+                        transform: rotate(0)
+                    }
+
+                    10% {
+                        -webkit-transform: rotate(14deg);
+                        transform: rotate(14deg)
+                    }
+
+                    20% {
+                        -webkit-transform: rotate(-8deg);
+                        transform: rotate(-8deg)
+                    }
+
+                    30% {
+                        -webkit-transform: rotate(14deg);
+                        transform: rotate(14deg)
+                    }
+
+                    40% {
+                        -webkit-transform: rotate(-4deg);
+                        transform: rotate(-4deg)
+                    }
+
+                    50% {
+                        -webkit-transform: rotate(10deg);
+                        transform: rotate(10deg)
+                    }
+
+                    60% {
+                        -webkit-transform: rotate(0);
+                        transform: rotate(0)
+                    }
+
+                    to {
+                        -webkit-transform: rotate(0);
+                        transform: rotate(0)
+                    }
+                }
+            }
+
+            >p {
+                // border: 2px solid burlywood;
+
+                line-height: 1.5em;
+                padding: .3em;
+
+                font-size: 1.4em;
+                color: gray;
+            }
+
+            .buttons {
+                // border: 2px solid black;
+                display: flex;
+                // justify-content: center;
+                margin-left: 2em;
+                width: fit-content;
+                align-items: center;
+                height: 15vh;
+                margin-top: 1em;
+
+                >a {
+                    // border: 2px solid blue;
+                    padding: 1em;
+                    margin: 1em;
+
+                    .hoverMe {
+                        color: black;
+                        font-size: 3em;
+                        transition: all .2s ease-in;
+
+                        &:hover {
+                            color: $Go-Green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hero_content_2 {
+        display: flex;
+        justify-content: center;
+
+        // border: 2px solid blue;
+        width: 50vw;
+
+        .image_hero {
+            // border: 2px solid brown;
+            width: 20dvw;
+
+            height: fit-content;
+            margin-top: 1.5em;
+            // border-radius: 61% 95% 106% 46%/58% 46% 83% 80%;
+            border-radius: 1em 0 1em 1em;
+            filter: grayscale(100%);
+            transition: all .5s ease;
+
+            &:hover {
+                filter: grayscale(0%);
+                transform: translateY(-5px);
+                box-shadow: 0 8px 10px $Go-Green;
+            }
+        }
+    }
+
+    .DarkMode {
+        position: absolute;
+        right: 1em;
+        // border: 2px solid black;
+        cursor: pointer;
+        font-size: 1.8em;
+    }
+}

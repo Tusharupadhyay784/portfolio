@@ -1,0 +1,131 @@
+.Hero {
+  height: 80dvh;
+}
+.Hero .hero_content {
+  display: flex;
+  height: inherit;
+}
+.Hero .hero_content .hero_content_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1.5em;
+  width: 50vw;
+  height: inherit;
+  padding: 1em;
+}
+.Hero .hero_content .hero_content_1 > div > h2 > span {
+  border: thin solid #4FFFB0;
+  display: inline-block;
+  width: 2.5vw;
+  margin-right: 0.3em;
+  margin-bottom: 0.3em;
+}
+.Hero .hero_content .hero_content_1 > div > h3 {
+  color: #00AB66;
+  margin-left: 0.3em;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+.Hero .hero_content .hero_content_1 #Intro {
+  color: #00AB66;
+  font-size: 1.3em;
+  padding: 0.4em;
+  margin-bottom: 0.3em;
+}
+.Hero .hero_content .hero_content_1 > div > h1 {
+  margin-left: 0.1em;
+  font-size: 3em;
+  margin-bottom: 0.3em;
+}
+.Hero .hero_content .hero_content_1 > div > h1 .wave {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: wave-animation;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+@keyframes wave-animation {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  10% {
+    -webkit-transform: rotate(14deg);
+    transform: rotate(14deg);
+  }
+  20% {
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  30% {
+    -webkit-transform: rotate(14deg);
+    transform: rotate(14deg);
+  }
+  40% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  60% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+.Hero .hero_content .hero_content_1 > p {
+  line-height: 1.5em;
+  padding: 0.3em;
+  font-size: 1.4em;
+  color: gray;
+}
+.Hero .hero_content .hero_content_1 .buttons {
+  display: flex;
+  margin-left: 2em;
+  width: fit-content;
+  align-items: center;
+  height: 15vh;
+  margin-top: 1em;
+}
+.Hero .hero_content .hero_content_1 .buttons > a {
+  padding: 1em;
+  margin: 1em;
+}
+.Hero .hero_content .hero_content_1 .buttons > a .hoverMe {
+  color: black;
+  font-size: 3em;
+  transition: all 0.2s ease-in;
+}
+.Hero .hero_content .hero_content_1 .buttons > a .hoverMe:hover {
+  color: #00AB66;
+}
+.Hero .hero_content_2 {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+}
+.Hero .hero_content_2 .image_hero {
+  width: 20dvw;
+  height: fit-content;
+  margin-top: 1.5em;
+  border-radius: 1em 0 1em 1em;
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+.Hero .hero_content_2 .image_hero:hover {
+  filter: grayscale(0%);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 10px #00AB66;
+}
+.Hero .DarkMode {
+  position: absolute;
+  right: 1em;
+  cursor: pointer;
+  font-size: 1.8em;
+}/*# sourceMappingURL=Hero.css.map */

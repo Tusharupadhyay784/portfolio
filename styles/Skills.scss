@@ -1,0 +1,51 @@
+$Go-Green: #00AB66;
+$Mint: #4FFFB0;
+$color1: rgb(140, 140, 140);
+
+.skills_container {
+    border: 2px solid black;
+    // height: 120dvh;
+    height: max-content;
+    margin-top: .5em;
+
+    >h1 {
+        margin: .5em;
+        border: 2px solid brown;
+        text-align: center;
+        font-size: 2.8em;
+        height: 15dvh;
+        padding-top: .5em;
+        color: $Go-Green;
+        cursor: pointer;
+
+
+        >span {
+            border: thin solid $Mint;
+            display: inline-block;
+            width: 3vw;
+            margin-right: .3em;
+            margin-bottom: .3em;
+            font-weight: bold;
+        }
+
+    }
+
+    .skill {
+        border: 2px solid crimson;
+        height: 100dvh;
+        position: relative;
+
+        >div {
+            position: absolute;
+            top: 1em;
+            left: 5em;
+
+        }
+
+        .imgarrow {
+            position: absolute;
+            left: 10em;
+            top: -7em;
+        }
+    }
+}

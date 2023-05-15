@@ -1,0 +1,38 @@
+.skills_container {
+  border: 2px solid black;
+  height: max-content;
+  margin-top: 0.5em;
+}
+.skills_container > h1 {
+  margin: 0.5em;
+  border: 2px solid brown;
+  text-align: center;
+  font-size: 2.8em;
+  height: 15dvh;
+  padding-top: 0.5em;
+  color: #00AB66;
+  cursor: pointer;
+}
+.skills_container > h1 > span {
+  border: thin solid #4FFFB0;
+  display: inline-block;
+  width: 3vw;
+  margin-right: 0.3em;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+.skills_container .skill {
+  border: 2px solid crimson;
+  height: 100dvh;
+  position: relative;
+}
+.skills_container .skill > div {
+  position: absolute;
+  top: 1em;
+  left: 5em;
+}
+.skills_container .skill .imgarrow {
+  position: absolute;
+  left: 10em;
+  top: -7em;
+}/*# sourceMappingURL=Skills.css.map */

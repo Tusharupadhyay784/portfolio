@@ -1,0 +1,54 @@
+.About {
+  height: 90dvh;
+  display: flex;
+  align-items: center;
+}
+.About .aboutIMG {
+  height: 50dvh;
+  width: 27dvw;
+  margin-left: 5em;
+  transition: all 0.5s;
+  animation: updown 2s linear alternate-reverse infinite;
+  border-radius: 50%;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 8px 10px white;
+  }
+  50% {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 10px rgb(1, 172, 102);
+  }
+  100% {
+    transform: translateY(0);
+    box-shadow: 0 8px 10px white;
+  }
+}
+.About .about-section {
+  height: 64dvh;
+  width: 100dvw;
+  margin-left: 2em;
+}
+.About .about-section > h2 {
+  font-weight: bold;
+  color: #00AB66;
+  margin-left: 0.6em;
+  cursor: pointer;
+  font-size: 2.5em;
+}
+.About .about-section > h2 > span {
+  border: thin solid #4FFFB0;
+  display: inline-block;
+  width: 3vw;
+  margin-right: 0.3em;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+.About .about-section > p {
+  height: 57dvh;
+  padding: 1em;
+  font-size: 1.5em;
+  color: rgb(140, 140, 140);
+  line-height: 1.5em;
+}/*# sourceMappingURL=About.css.map */

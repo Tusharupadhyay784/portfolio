@@ -1,0 +1,71 @@
+.w-container {
+  height: max-content;
+  background-color: #fcfcfc;
+  box-shadow: 0 0px 10px #e0e0e0;
+}
+.w-container .w-first {
+  text-align: center;
+  height: 15dvh;
+  padding-top: 1.8em;
+}
+.w-container .w-first > h1 {
+  cursor: pointer;
+  font-size: 2.5em;
+  color: #00AB66;
+}
+.w-container .w-first > h1 > span {
+  border: thin solid #4FFFB0;
+  display: inline-block;
+  width: 3vw;
+  margin-right: 0.3em;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+.w-container .w-second {
+  height: max-content;
+}
+.w-container .w-second > div {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.w-container .w-second > div :hover {
+  background: #00AB66;
+  color: #fff;
+}
+.w-container .w-second > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0px 10px #e0e0e0;
+  border-radius: 10px;
+  background: #fff;
+  width: 28dvw;
+  height: 12dvh;
+  margin: 1em;
+  transition: all 0.3s ease;
+}
+.w-container .w-second > div > div :hover {
+  background: #00AB66;
+  color: #fff;
+}
+.w-container .w-second > div > div > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-radius: 10px;
+  height: inherit;
+  width: inherit;
+  transition: all 0.3s ease;
+  color: gray;
+}
+.w-container .w-second > div > div > p > span {
+  margin-right: 1em;
+}
+.w-container .w-second > div > div > p :hover {
+  background: #00AB66;
+  color: #fff;
+}/*# sourceMappingURL=WhatiDo.css.map */

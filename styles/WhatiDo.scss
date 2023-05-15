@@ -1,0 +1,102 @@
+$Go-Green: #00AB66;
+$Mint: #4FFFB0;
+$color1: rgb(140, 140, 140);
+
+.w-container {
+    // border: 2px solid black;
+    // height: 120dvh;
+    height: max-content;
+    background-color: #fcfcfc;
+    box-shadow: 0 0px 10px #e0e0e0;
+    
+
+    .w-first {
+        // border: 2px solid crimson;
+        text-align: center;
+        height: 15dvh;
+        padding-top: 1.8em;
+
+        >h1 {
+            cursor: pointer;
+            font-size: 2.5em;
+
+            >span {
+                border: thin solid $Mint;
+                display: inline-block;
+                width: 3vw;
+                margin-right: .3em;
+                margin-bottom: .3em;
+                font-weight: bold;
+            }
+
+            color: $Go-Green;
+        }
+    }
+
+    .w-second {
+        // border: 2px solid brown;
+        // height: 100dvh;
+        height: max-content;
+
+
+        >div {
+            // border: 2px solid black;
+            margin-top: 1em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            :hover {
+                background: #00AB66;
+                color: #fff;
+            }
+
+            >div {
+                // align-self: flex-start;
+
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // border: 2px solid rgb(140, 140, 140);
+                box-shadow: 0 0px 10px #e0e0e0;
+                border-radius: 10px;
+                background: #fff;
+                width: 28dvw;
+                height: 12dvh;
+                margin: 1em;
+                transition: all .3s ease;
+                // padding: 1em;
+                :hover {
+                    background: #00AB66;
+                    color: #fff;
+                }
+
+                >p {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1em;
+
+                    >span {
+                        // border: 2px solid black;
+                        margin-right: 1em;
+                    }
+
+                    // border: 2px solid black;
+                    border-radius: 10px;
+                    height: inherit;
+                    width: inherit;
+                    transition: all .3s ease;
+                    color: gray;
+
+                    :hover {
+                        background: #00AB66;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
